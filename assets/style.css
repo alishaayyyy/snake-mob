@@ -1,0 +1,112 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Stack elements vertically */
+  height: 100vh;
+  background-color: #e8f0f2;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.game-container {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  max-width: 90%; /* Limit width for mobile */
+  overflow: hidden; /* Prevent overflow on smaller screens */
+}
+
+h1 {
+  color: #4CAF50;
+}
+
+label {
+  font-size: 18px;
+  margin: 10px;
+}
+
+select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #4CAF50;
+  margin: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: #45a049;
+}
+
+canvas {
+  border: 2px solid #4CAF50;
+  background-color: #ffffff;
+  display: block; /* Ensure the canvas is treated as a block element */
+  margin: 0 auto; /* Center align horizontally */
+  width: 100%; /* Make canvas responsive */
+  max-width: 400px; /* Set a max width */
+  height: auto; /* Keep aspect ratio */
+}
+
+h2 {
+  color: #4CAF50;
+  margin: 10px 0;
+  font-size: 24px;
+}
+
+/* Touch controls for mobile */
+.controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.control-button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  margin: 0 10px;
+  cursor: pointer;
+  flex: 1; /* Make buttons grow to fill space */
+}
+
+.control-button:active {
+  background-color: #45a049;
+}
+
+/* Other CSS rules remain unchanged */
+
+h2 {
+  color: #4CAF50;
+  margin: 10px 0;
+  font-size: 24px;
+  display: inline; /* Ensure the score is displayed inline */
+}
+
+/* Additional styles can go here */
+
+
+
+

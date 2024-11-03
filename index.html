@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Snake Game</h1>
+        <label for="difficulty">Choose Difficulty:</label>
+        <select id="difficulty">
+            <option value="">Select Difficulty</option>
+            <option value="200">Slow</option>
+            <option value="150">Medium</option>
+            <option value="100">Fast</option>
+        </select>
+        <button id="startButton" disabled>Start Game</button>
+        <canvas id="gameCanvas" width="400" height="400" style="margin-bottom: 5em;"></canvas>
+        <h2>Score: <span id="score">0</span></h2> <!-- Ensure this line is present -->
+
+        <!-- Control Buttons -->
+        <div class="controls">
+            <button class="control-button" id="upButton">⬆️</button>
+            <div>
+                <button class="control-button" id="leftButton">⬅️</button>
+                <button class="control-button" id="rightButton">➡️</button>
+            </div>
+            <button class="control-button" id="downButton">⬇️</button>
+        </div>
+    </div>
+    <script src="./assets/app.js"></script>
+</body>
+</html>
+
+
+
